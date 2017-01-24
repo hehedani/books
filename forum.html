@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>有书论坛</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/js.cookie-2.1.0.min.js"></script>
+</head>
+<body>
+<div class="box">
+    <header>
+        <div class="top">
+            <div class="top_center"><a href="#">关于我们</a><a href="#">收藏</a><a href="system.html" id="login">个人中心</a>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="logo">
+            <img src="images/books.png">
+        </div>
+        <nav>
+            <ul>
+           <li><a href="index.html" id="a1"><div class="index">首　　页</div></a> </li>
+            <li><a href="classification.html"id="a2">有书分类</a> </li>
+            <li><a href="forum.html" id="a3">书友论坛</a> </li>
+            <li><a href="download.html" id="a4">下载帮助</a> </li>
+        </ul>
+        </nav>
+    </header>
+    <div class="search">
+        <ul class="recommend">
+            <li><span>推荐</span></li>
+            <li><a href="#">武侠小说</a></li>
+            <li><a href="#">文学作品</a></li>
+            <li><a href="#">言情小说</a></li>
+            <li><a href="#">名人传记</a></li>
+            <li><a href="#">历史名著</a></li>
+            <li class="input"><input type="text" placeholder="搜索" style="border-radius:10px;"></li>
+        </ul>
+    </div>
+<div class="content">
+<div class="sidebar_left">
+<div class="talk">
+    <div class="message"><span> &nbsp;&nbsp;30</span></div>
+    <div class="topic">
+        <h3>发帖题目</h3><p>发帖人</p>
+    </div>
+    <div class="topic01">
+        <span>题目描述</span><p>2015-11-11</p>
+    </div>
+    <div class="topic02">
+        <span>最后一条留言回复</span><p>2015-11-11</p>
+    </div>
+</div>
+    <div class="clear"></div>
+
+    <div class="talk">
+        <div class="message"><span> &nbsp;&nbsp;30</span></div>
+        <div class="topic">
+            <h3>发帖题目</h3><p>发帖人</p>
+        </div>
+        <div class="topic01">
+            <span>题目描述</span><p>2015-11-11</p>
+        </div>
+        <div class="topic02">
+            <span>最后一条留言回复</span><p>2015-11-11</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="talk">
+        <div class="message"><span> &nbsp;&nbsp;30</span></div>
+        <div class="topic">
+            <h3>发帖题目</h3><p>发帖人</p>
+        </div>
+        <div class="topic01">
+            <span>题目描述</span><p>2015-11-11</p>
+        </div>
+        <div class="topic02">
+            <span>最后一条留言回复</span><p>2015-11-11</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="talk">
+        <div class="message"><span> &nbsp;&nbsp;30</span></div>
+        <div class="topic">
+            <h3>发帖题目</h3><p>发帖人</p>
+        </div>
+        <div class="topic01">
+            <span>题目描述</span><p>2015-11-11</p>
+        </div>
+        <div class="topic02">
+            <span>最后一条留言回复</span><p>2015-11-11</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="talk">
+        <div class="message"><span> &nbsp;&nbsp;30</span></div>
+        <div class="topic">
+            <h3>发帖题目</h3><p>发帖人</p>
+        </div>
+        <div class="topic01">
+            <span>题目描述</span><p>2015-11-11</p>
+        </div>
+        <div class="topic02">
+            <span>最后一条留言回复</span><p>2015-11-11</p>
+        </div>
+    </div>
+    <div class="post">
+        <label>
+        <input type="text" value="发帖主题" ><br>
+        <textarea class="area"></textarea><br>
+        <button type="submit">发表</button>
+        </label>
+    </div>
+    <div class="clear"></div>
+ </div>
+<div class="sidebar_right">
+<div class="head_portrait">
+    <img src="images/headportrait.jpg" height="100px" width="120px">
+    <p>用户名</p>
+</div>
+<img src="images/wenwen.jpg">
+    <p>作者：某某</p>
+    <p>上传日期：11-11</p>
+    <p>【在线阅读】</p>
+</div>
+    <div class="clear"></div>
+</div>
+
+<footer>
+        <div class=" bottom">
+            <p>版权管理</p>
+        </div>
+</footer>
+</div>
+<script>
+
+    if(Cookies.get('user')){
+        console.log(Cookies.get('user'));
+
+        document.getElementById('login').innerText=Cookies.get('user');
+        document.getElementById('login').innerHTML='<p class="x">欢迎您'+Cookies.get('user')+'</p>'
+    }
+
+    else {
+
+        console.log('获取')
+    }
+</script>
+</body>
+</html>

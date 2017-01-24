@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载帮助</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/js.cookie-2.1.0.min.js"></script>
+</head>
+<body>
+<div class="box">
+    <header>
+        <div class="top">
+            <div class="top_center"><a href="#">关于我们</a><a href="#">收藏</a><a href="system.html" id="login">个人中心</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="logo">
+            <img src="images/books.png">
+        </div>
+        <nav>
+            <ul>
+           <li><a href="index.html" id="a1"><div class="index">首　　页</div></a> </li>
+            <li><a href="classification.html"id="a2">有书分类</a> </li>
+            <li><a href="forum.html" id="a3">书友论坛</a> </li>
+            <li><a href="download.html" id="a4">下载帮助</a> </li>
+        </ul>
+        </nav>
+    </header>
+    <div class="search">
+        <ul class="recommend">
+            <li><span>推荐</span></li>
+            <li><a href="#">武侠小说</a></li>
+            <li><a href="#">文学作品</a></li>
+            <li><a href="#">言情小说</a></li>
+            <li><a href="#">名人传记</a></li>
+            <li><a href="#">历史名著</a></li>
+            <li class="input"><input type="text" placeholder="搜索" style="border-radius:10px;"></li>
+        </ul>
+    </div>
+<div class="sidebar_left01">
+    <div class="help01">
+        <ul>
+           <li><a href="#question01">电子书下载的格式有哪些</a> </li>
+            <li><a href="#question02">有想看的书这里没有</a> </li>
+            <li><a href="#question03">如何下载看书</a> </li>
+            <li><a href="#question04">怎样上传自己的电子书</a> </li>
+            <li><a href="#question05">可以上传意见，电子书纠错</a> </li>
+            <li><a href="#question06"></a> </li>
+        </ul>
+    </div>
+</div>
+<div class="sidebar_right01">
+    <div class="answer" id="question01">
+        <h3>电子书下载的格式有哪些</h3>
+        <P>有pnf , txt , png 三种格式</P>
+    </div>
+    <div class="answer" id="question02">
+        <h3>电子书下载的格式有哪些</h3>
+        <P> 可以发帖向广大网友求助</P>
+    </div>
+    <div class="answer" id="question03">
+        <h3>怎么下载电子书</h3>
+        <P>点击下载按钮，选择您要的格式</P>
+    </div>
+    <div class="answer" id="question04">
+        <h3>怎样上传自己的电子书</h3>
+        <P>点击自己的用户名，有上传通道，上传格式必须是png,text,jpg格式，其他格式不兼容</P>
+    </div>
+    <div class="answer" id="question05">
+        <h3>可以上传意见，电子书纠错</h3>
+        <p>如果看到电子书的内容有误，可以上传意见，我们会联系作者改错。</p>
+    </div>
+    <div class="answer" id="question06">
+        <h3>电子书下载的格式有哪些</h3>
+        <p>pdf  txt  pngpdf  txt  pngpdf  txt  pngpdf  txt  pngpdf  txt  pngpdf
+            txt  pngpdf  txt  pngpdf  txt  pngpdf  txt  pngpdf  txt  pngpdf  txt
+            pngpdf  txt  pngpdf  txt  pngpdf  txt  pngpdf  txt  pngpdf  txt  pngpdf  txt  pngpdf  txt
+            pngpdf  txt  pngpdf  txt  pngpdf  txt  png</p>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+<script>
+
+    if(Cookies.get('user')){
+        console.log(Cookies.get('user'));
+
+        document.getElementById('login').innerText=Cookies.get('user');
+        document.getElementById('login').innerHTML='<p class="x">欢迎您'+Cookies.get('user')+'</p>'
+    }
+
+    else{
+
+        console.log('获取')
+    }
+</script>
+</body>
+</html>
